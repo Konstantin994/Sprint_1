@@ -12,7 +12,7 @@ for new in new_s:
         minutes = int(new.replace('m',''))
         total_minutes += minutes
     elif 's' in new:
-        seconds = int(new.replace('s',''))
+        seconds = float(new.replace('s',''))
         total_minutes += seconds/60
 
 print(int(total_minutes))
